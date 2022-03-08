@@ -1,0 +1,117 @@
+.header-wrapper {
+  display: flex;
+  max-width: $content-width;
+  height: 150px;
+  align-items: center;
+  justify-content: space-between;
+  color: $color-font-light;
+}
+
+.header {
+  background-color: $color-bg-dark;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo__title {
+  width: 125px;
+  height: 31px;
+  font-family: 'Forum', cursive;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.header_title {
+  font-size: 28px;
+  line-height: 31px;
+  margin-left: 25px;
+  letter-spacing: 5px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav_link {
+  justify-content: space-between;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 25.8px;
+  letter-spacing: 2.1px;
+  color: $color-font-light;
+  margin-left: 55px;
+  transition: 0.3s;
+    &:hover {
+      color: $color-font-gold;
+    }
+    &:active {
+      color: $color-dark-gold;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header-wrapper {
+    max-width: $content-small-width;
+    height: 130px;
+  }
+  .nav {
+    display: none;
+  }
+  .burger_logo {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .nav {
+    display: block;
+  }
+  .burger_logo {
+    display: none;
+  }
+}
+
+// @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
+  .header-wrapper {
+    max-width: $tablet-width;
+    height: 110px;
+  }
+  .logo {
+    padding-top: 10px;
+  }
+}
+
+// @media only screen and (max-width: 420px) {
+@media only screen and (max-width: 600px) {
+  .header-wrapper {
+    max-width: $mobile-big-width;
+    height: 90px;
+  }
+  .logo {
+    padding-top: 10px;
+  }
+  .logo_i {
+    width: 29px;
+    height: 16px;
+  }
+  .header_title {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

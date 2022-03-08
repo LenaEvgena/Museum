@@ -1,0 +1,27 @@
+//base
+// @import "../node_modules/normalize-scss/sass/normalize";
+@import "base/normalize";
+@import "base/base";
+
+//abstract
+@import "abstract/constants";
+@import "abstract/mixins";
+//component
+@import "components/slick-slider";
+
+//layout
+@import "layouts/wrapper";
+@import "layouts/header";
+@import "layouts/burgermenu";
+@import "layouts/sections";
+@import "layouts/welcome";
+@import "layouts/visit";
+@import "layouts/explore";
+@import "layouts/video";
+@import "layouts/gallery";
+@import "layouts/tickets";
+@import "layouts/booking";
+@import "layouts/contacts";
+@import "layouts/footer";
+
+//component

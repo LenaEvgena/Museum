@@ -1,0 +1,93 @@
+.section {
+  padding: 75px 0;
+  overflow: hidden;
+}
+
+.dark-section {
+  background-color: $color-bg-dark;
+  overflow: hidden;
+}
+
+.video-section {
+  padding: 75px 0;
+  overflow: hidden;
+}
+
+.section__title {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.title_colored {
+  color: $color-font-gold;
+}
+
+.title_bordered {
+  width: 100%;
+  padding-bottom: 25px;
+  border-bottom: 3px solid $color-dark-red;
+}
+
+.parallax {
+  display: block;
+  height: 400px;
+  width: 100vw;
+  background-image: url("../assets/img/parallax.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+// @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
+  .section {
+    padding: 60px 0;
+  }
+  .video-section {
+    padding: 60px 0;
+  }
+  .section__title {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  .title_bordered {
+    padding-bottom: 20px;
+  }
+}
+
+// @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
+  .section {
+    padding: 40px 0;
+  }
+  .video-section {
+    padding: 40px 0;
+  }
+  .section__title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .parallax {
+    height: 300px;
+  }
+}
+
+// @media only screen and (max-width: 420px) {
+@media only screen and (max-width: 600px) {
+  .video-section {
+    padding: 36px 0 40px 0;
+  }
+  .section__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+
+
+

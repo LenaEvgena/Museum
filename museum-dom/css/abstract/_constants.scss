@@ -1,0 +1,35 @@
+//colors
+//$color-primary: fff;
+$color-bg-dark: #030303;
+$color-dark-red: #710707;
+$color-light: #fff;
+
+$color-light-grey: #c4c4c4;
+$color-grey: #999999;
+$color-dark-grey: #333333;
+$color-light-sand: #D2B183;
+
+$color-font-gold: #9d8665;
+$color-font-light: #fff;
+$color-font-dark: #000;
+
+//hover
+$color-dark-gold: #7E6C51;
+$color-hover-grey: #989898;
+$color-option-grey: #E7E7E7;
+$color-visa-grey: #BCBCBC;
+$color-visa-darkgrey: #939393;
+
+$font1: 80px;
+$font2: 32px;
+
+$content-width: 1440px;
+$content-small-width: 984px; //for 1024
+$tablet-width: 728px; //for 768
+$mobile-big-width: 380px; //for 420
+
+
+// filter: invert(62%) sepia(0%) saturate(107%) hue-rotate(203deg) brightness(96%) contrast(98%); ---светло-серый
+// filter: invert(62%) sepia(0%) saturate(107%) hue-rotate(203deg) brightness(96%) contrast(98%); ---темно-серый
+// filter: invert(57%) sepia(29%) saturate(389%) hue-rotate(356deg) brightness(89%) contrast(90%); ---золотистый
+// filter: invert(10%) sepia(26%) saturate(6893%) hue-rotate(344deg) brightness(115%) contrast(112%); ---темно-красный

@@ -1,0 +1,26 @@
+.wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+  //@extend %transition;
+}
+
+// @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1100px) {
+  .wrapper {
+    max-width: $content-small-width;
+  }
+}
+
+// @media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    max-width: $tablet-width;
+  }
+}
+
+// @media screen and (max-width: 420px) {
+@media screen and (max-width: 600px) {
+  .wrapper {
+    max-width: $mobile-big-width;
+  }
+}

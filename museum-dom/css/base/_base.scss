@@ -1,0 +1,43 @@
+
+html {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+// @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
+  h2 {
+    font-size: 50px;
+    line-height: 75px;
+  }
+}
+// @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
+  h2 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+// @media only screen and (max-width: 420px) {
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}

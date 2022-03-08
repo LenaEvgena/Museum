@@ -1,0 +1,356 @@
+.footer-section {
+  color: $color-font-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__navigation {
+  display: flex;
+  // flex-wrap: wrap;
+  width: 100%;
+  padding-top: 83px;
+  padding-bottom: 54px;
+}
+
+.footer_logo {
+  font-family: Forum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-right: 141px;
+}
+
+.footer_image {
+  padding-bottom: 1px;
+  margin-right: 27px;
+}
+
+.nav_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  // column-count: 2;
+  column-gap: 150px;
+  width: 363px;
+  height: 128px;
+  padding-top: 2px;
+}
+
+.footer_item {
+  padding-bottom: 26px;
+}
+
+.footer_link {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 2px;
+  color: $color-font-light;
+  transition: 0.3s;
+    &:hover {
+      color: $color-font-gold;
+    }
+}
+
+.social ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  width: 340px;
+  height: 48px;
+  margin-left: 397px;
+  padding-top: 77px;
+}
+
+.social_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: solid 1px $color-light;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: 0.3s;
+    &:hover {
+      border-color: $color-font-gold;
+    }
+}
+
+.social_item:hover .social_image {
+  filter: invert(57%) sepia(29%) saturate(389%) hue-rotate(356deg) brightness(89%) contrast(90%);
+
+}
+
+.social_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  transition: 0.3s;
+}
+
+.social_youtube {
+  background-repeat: no-repeat;
+}
+.social_insta {
+  background-repeat: no-repeat;
+}
+.social_facebook {
+  background-repeat: no-repeat;
+}
+.social_twitter {
+  background-repeat: no-repeat;
+}
+.social_pinterest {
+  background-repeat: no-repeat;
+}
+
+.footer__data {
+  display: flex;
+  width: 100%;
+  height: 124px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+}
+
+.footer2_link {
+  padding-left: 100px;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: $color-font-light;
+  transition: 0.3s;
+    &:hover {
+      color: $color-font-gold;
+    }
+}
+
+.border {
+  position: absolute;
+}
+
+.border::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 124px;
+  border-bottom: 3px solid #666666;
+  width: 100vw;
+}
+
+.rs_link {
+  padding-left: 200px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .social {
+    margin-left: 200px;
+  }
+}
+
+// @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
+  .footer__navigation {
+    padding-top: 62px;
+    padding-bottom: 54px;
+  }
+  .footer_logo {
+    margin-right: 38px;
+  }
+  .nav_container {
+    column-gap: 100px;
+    width: 313px;
+    height: 128px;
+    padding-top: 2px;
+  }
+  .social {
+    margin-left: 92px;
+    padding-top: 82px;
+  }
+  .social_item {
+    width: 48px;
+    height: 48px;
+  }
+  .rs_link {
+    padding-left: 200px;
+  }
+}
+
+// @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
+  .footer__navigation {
+    padding-top: 39px;
+    padding-bottom: 42px;
+    flex-wrap: wrap;
+  }
+  .footer_image {
+    margin-right: 25px;
+  }
+  .footer_logo {
+    margin-right: 98px;
+  }
+  .footer_link {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .nav_container {
+    column-gap: 184px;
+    padding-top: 18px;
+  }
+  .social {
+    margin-left: 298px;
+    padding-top: 34px;
+  }
+  .rs_link {
+    margin-left: 100px;
+  }
+  .footer__data {
+    height: 103px;
+  }
+  .footer2_link {
+    padding-left: 22px;
+  }
+  .border::after {
+    bottom: 103px;
+    border-bottom: 1px solid #666666;
+  }
+}
+
+// @media only screen and (max-width: 420px) {
+@media only screen and (max-width: 600px) {
+  .footer__navigation {
+    padding-top: 39px;
+    padding-bottom: 42px;
+    flex-wrap: wrap;
+  }
+  .footer_image {
+    margin-right: 20px;
+    padding-bottom: 0;
+  }
+  .footer_logo-img {
+    width: 29px;
+    height: 16px;
+  }
+  .footer_logo {
+    display: flex;
+    align-items: center;
+    height: 18px;
+    padding-top: 1px;
+    margin-right: 0;
+    margin-bottom: 23px;
+    font-size: 16px;
+    line-height: 36px;
+  }
+  .footer__title {
+    margin-top: 10px;
+  }
+  .footer_link {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .nav_container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 90px;
+    row-gap: 3px;
+    width: 100%;
+    height: 71px;
+    padding-top: 2px;
+    align-items: center;
+    margin-top: 17px;
+  }
+  .social {
+    margin-left: 60px;
+    width: 260px;
+    padding-top: 36px;
+  }
+  .rs_link {
+    display: none;
+  }
+  .footer__data {
+    padding-left: 4px;
+    font-size: 16px;
+    line-height: 22px;
+    height: 103px;
+  }
+  .border::after {
+    bottom: 102px;
+    border-bottom: 2px solid #666666;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .footer__navigation {
+    padding-top: 39px;
+    padding-bottom: 42px;
+    flex-wrap: wrap;
+  }
+
+  .footer_link {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .footer_nav {
+    margin-bottom: 80px;
+  }
+  .footer__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 3px;
+    width: 100%;
+    height: 71px;
+    padding-top: 2px;
+    align-items: center;
+    margin-top: 17px;
+  }
+  .social {
+    margin-left: 0px;
+    width: 260px;
+    padding-top: 0px;
+  }
+
+  .footer__data, .footer2_link {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+}

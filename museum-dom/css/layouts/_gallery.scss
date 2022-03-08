@@ -1,0 +1,115 @@
+.gallery-section {
+  overflow: hidden;
+  position: relative;
+  height: 2049px;
+}
+
+.gallery-wrapper {
+  color: $color-font-light;
+  overflow: hidden;
+}
+
+.gallery__gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 360px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+.gallery-container {
+  display: block;
+  width: 100%;
+  height: 1960px;
+  overflow-y: hidden;
+}
+
+.gallery-inner-container {
+  margin-top: 75px;
+  columns: 3;
+  flex-wrap: wrap;
+  column-gap: 36px;
+}
+
+.gallery__image {
+  display: inline-block;
+  margin-bottom: 24px;
+  max-width: 456px;
+  width: 100%;
+    &:nth-child(1) {
+      margin-top: 50px;
+    }
+    &:nth-child(11) {
+      margin-top: 50px;
+    }
+}
+
+.gallery_show {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.8s ease;
+    &.active {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+// @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1100px) {
+  .gallery-section {
+    height: 1339px;
+  }
+  .gallery-container {
+    height: 1270px;
+  }
+  .gallery-inner-container {
+    margin-top: 60px;
+    columns: 3;
+    column-gap: 36px;
+  }
+}
+
+// @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
+  .gallery-section {
+    height: 1140px;
+  }
+  .gallery-inner-container {
+    margin-top: 40px;
+    columns: 2;
+    column-gap: 24px;
+  }
+}
+
+// @media only screen and (max-width: 420px) {
+@media only screen and (max-width: 600px) {
+  .gallery-section {
+    height: 676px;
+  }
+  .gallery-inner-container {
+    margin-top: 40px;
+    columns: 2 178px;
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .gallery-section {
+    height: 676px;
+  }
+  .gallery-inner-container {
+    margin-top: 15px;
+    columns: 2;
+    column-gap: 12px;
+  }
+  .gallery__image {
+    margin-top: 0;
+    margin-bottom: 10px;
+    &:nth-child(1) {
+      margin-top: 15px;
+    }
+    &:nth-child(11) {
+      margin-top: 0;
+    }
+  }
+}
